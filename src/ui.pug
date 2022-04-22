@@ -1,0 +1,14 @@
+//- burger mobile
+//- form.form
+//- slider
+extends ./pug/layout/ui-layout.pug
+include ./pug/elements/logo
+include ./pug/elements/button
+
+block content 
+  .container
+    .ui-block
+      .header-logo 
+        +logo
+    .ui-block
+      +button('button')(href="/")

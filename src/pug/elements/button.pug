@@ -1,0 +1,10 @@
+mixin button(text)
+  if attributes
+    a.button(href= attributes.href)
+      span= text
+  //- else if attributes.type
+  //-   button.button(type= attributes.type)
+  //-     span= text
+  else
+    button.button
+      span= text

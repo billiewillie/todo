@@ -1,0 +1,13 @@
+include ../../elements/logo
+include ../../elements/icon
+
+header.header
+  .container
+    .header-logo 
+      +logo
+
+    .header-account
+      a(href="/") 
+        +icon("./img/sprite.svg#email")
+      a(data-micromodal-trigger="modal-1")
+        +icon("./img/sprite.svg#user")

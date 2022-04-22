@@ -1,0 +1,13 @@
+include ./icon
+
+#modal-1.modal.micromodal-slide(aria-hidden='true')
+  .modal__overlay(tabindex='-1' data-micromodal-close)
+    .modal__container(role='dialog' aria-modal='true' aria-labelledby='modal-1-title')
+      header.modal__header
+        button.modal__close(aria-label='Close modal' data-micromodal-close)
+          +icon("../../img/sprite.svg#close")
+      .modal-content-content
+        .modal__content 
+          .modal__content--icon
+             +icon("../../img/sprite.svg#user-big")
+          p.modal__content--name user
