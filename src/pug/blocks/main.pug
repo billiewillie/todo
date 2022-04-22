@@ -1,13 +1,6 @@
 main.main 
   .main-top
     h1.title Avtograph TODO list
-    .dropdown
-      select.filter-todo
-        option(value="all", selected="selected") Все
-        option(value="completed") Выполненные
-        option(value="uncompleted") В работе
-  .newTask
-    form.todoForm
-      input(type="text" id="newTask" placeholder="Поле ввода")
-      button#newTaskBtn(type="submit") +
+    include ../elements/dropdown
+  include ../elements/newTask
   .taskList

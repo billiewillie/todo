@@ -31,10 +31,15 @@ body {
 	}
 }
 
+button {
+	cursor: pointer;
+}
+
 i.icon {
 	display: flex;
 	align-items: center;
 	font-size: 0;
+	cursor: pointer;
 
 	& svg {
 		max-height: 100%;

@@ -158,6 +158,12 @@
 .modal__container button {
 	outline: none;
 	cursor: pointer !important;
+	width: 8px;
+	height: 8px;
+	background-image: url(../img/close.svg);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: contain;
 }
 
 .modal__container h2.modal__title {
@@ -188,14 +194,12 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	.modal__container {
-		width: 90% !important;
-		min-width: 90% !important;
+		width: 65% !important;
 	}
 
 	@supports (display: flex) {
 		.modal__container {
-			width: 90% !important;
-			min-width: 90% !important;
+			width: 65% !important;
 		}
 	}
 }
